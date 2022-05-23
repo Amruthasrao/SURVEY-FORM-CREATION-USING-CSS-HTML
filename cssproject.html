@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!__program__>
+<html>
+<head>
+ <title>SURVEY FORM</title>
+<style>
+.clr{color:Darkblue;}
+</style>
+</head>
+<body style="background-color:BlanchedAlmond;">
+ <!__form is a collection of related data sent to backend.Website use form to collect info from user and transmit to the server__>
+<form method="POST" action="form.com"/>
+<h1 align="center" id="title">Application for KALI LINUX SURVEY</h1>
+<p style="font-size:20px" id="Description"><b>Note:</b>Form is to be submitted 21 days prior to date</p>
+ 
+
+<fieldset>
+<legend style="font-size:25px;color:purple;"><b>Personal details</b></legend>
+<label class="clr">Name:</label><br>
+<input type="text" placeholder="Enter name here"/><br>
+<p>&nbsp</p>
+<label class="clr">Address:</label><br>
+<textarea id="name" height:"10px" width:"20px" placeholder="Enter address here"></textarea><br>
+<p>&nbsp</p>
+<label class="clr" for="email">Email:</label><br>
+<input type="email" id="email" name="email" placeholder="Enter email address"><br>
+<p>&nbsp</p>
+<label class="clr">Phone Number:</label><br>
+<input type="tel" id="phone" name="phone" placeholder="1234567890"/><br>
+<p>&nbsp</p>
+<label class="clr" for="Gender">Gender</label><br>
+<input type="radio" name="Male" value="male">Male</input><br>
+<input type="radio" name="Female" value="Female">Female</input><br>
+<input type="radio" name="Other" value="other">Other</input><br>
+<p>&nbsp</p>
+<label class="clr" for="datemax"> Enter a date before 2022-09-01:</label><br>
+<input type="date" id="datemax" name="datemax" max="2022-08-31"/><br>
+<p>&nbsp</p>
+<label class="clr">Enter Education type</label><br>
+<select>
+<optgroup label="Education type">
+<option>Pre-University</option>
+<option>University</option>
+<option>Post-Graduation</option>
+</optgroup>
+</select><br>
+<p>&nbsp</p>
+<label class="clr">Enter college name:</label><br>
+<input type="text" placeholder="Enter college name"/><br>
+<p>&nbsp</p>
+</fieldset>
+<br>
+<fieldset>
+<legend style="font-size:25px;color:purple;"><b>About the Kalee Linux Survey</b></legend>
+<label>Select no. of people in the group:</label><br>
+<select name="choose">
+<optgroup">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</optgroup>
+</select><br>
+<p>Content must be less than 100 words</p>
+<textarea name="inputmsg" style="width:500px;height:155px" placeholder="Enter text here"></textarea>
+</br>
+</fieldset>
+<button type="submit" id="submit">Send your application</button>
+
+</form>
+
+</body>
+ </html>
